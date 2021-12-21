@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="padraomindverse.css">
+    <link rel="shortcut icon" href="imagens/icobrain.ico
+    " type="image/x-icon">
+    <title>MindVerse</title>
+</head>
+<body>
+    <header>
+        <img id="king" src="imagens/king.png" alt="">
+        <nav> 
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="mindset.html">Mindset</a></li>
+                <li><a href="lembretes.html">Lembretes</a></li>
+                <li><a href="pensamentos.html">Pensamentos</a></li>
+                <li><a href="lixeira.html">Lixeira</a></li>
+            </ul>
+        </nav>
+
+        </header>
+
+    <main> <!--Conteudo, noticias, etc's-->
+        <section id="container"><!-- -->
+            <div id="kobe">
+                <img id='smile' src="imagens/kobe2.png" alt="kobe">
+        </div>
+            <div class="principal">
+                <p class="pensamento">“Nós não desistimos. Nós não nos escondemos. Nós não corremos. Nós suportamos e conquistamos. ”
+                </p>
+
+                <p class="pensamento">“Descanse no final, não no meio.”</p>
+
+                <a href="mindset.html"><button id="gokobe">>></button></a>
+            </div>
+            
+        </section>
+        <section id="container02">
+            <div class="principal">
+                <p class="pensamento">“Você tem as mesmas 24 horas que eu!”
+                </p>
+                <p class="pensamento">“Nunca chore por passado e sim viva o presente de olho aberto para o futuro.”</p>
+
+                <p class="pensamento">“Nós Falamos Sempre de Malcom X e Martin Luther King JR mas esta na hora de ser como eles, forte como eles. Eles eram mortais como nós e tudo que fizeram, nós também podemos fazer”</p>
+            </div>
+            <div id="pac">
+                <img src="imagens/tupac.png" alt="kobe">
+                    </div>
+        </section>
+
+         
+    </main>
+    
+    <footer>
+        <!-- a Finalização da pagina, o contato, o trabalhe conosco, ou o "Produzido por..."-->
+
+    </footer>
+    <script>
+        var botao = document.getElementById('gokobe');
+        botao.addEventListener('mouseenter' , enter);
+        botao.addEventListener('mouseout' , saiu);
+        function enter() {
+            botao.style.background = 'rgba(148, 16, 181, 0.33)';
+            botao.innerText = 'GO'
+        }
+        function saiu() {
+            botao.style.background = '#9410B5'
+            botao.innerText = '>>'
+        }
+
+        var img = document.getElementById('smile');
+        img.addEventListener('mouseenter' , smile);
+        img.addEventListener('mouseout', serio);
+        
+        function smile() {
+            img.src = 'imagens/kobeyeah2.png'
+        }
+        function serio() {
+            img.src = 'imagens/kobe2.png'
+        }
+
+        /*var texto = document.querySelector('p.pensamento')
+        texto.addEventListener('mouseenter' , subirtexto)
+        texto.addEventListener('mouseout' , normal)
+
+        function subirtexto() {
+            texto.style.background = 'gray';
+            texto.style.borderRadius = '10px'
+            texto.style.display = 'block'
+            texto.style.float = 'right'
+        }
+        function normal() {
+            texto.style.background = 'none'
+            texto.style.background = '0px'
+            texto.style.display = 'inline-block'
+            texto.style.float = 'none'
+        }*/
+
+    </script>
+    
+</body>
+</html>
